@@ -1,4 +1,4 @@
-﻿[project]
+[project]
 name = "articlegen"
 version = "0.1.0"
 description = "A flask project which is used as api endpoint for generating blog response and provide to the frontend."
@@ -6,8 +6,7 @@ authors = [
     { name = "Jainam Sanghavi", email = "jainamsanghavi008@gmail.com" }
 ]
 
-
-requires-python = ">=3.12,<4.0"
+requires-python = ">=3.11,<4.0"
 
 
 dependencies = [
@@ -17,7 +16,7 @@ dependencies = [
     "Flask==3.1.0",
     "flask-cors==5.0.1",
     "gunicorn==23.0.0",
-    "numpy==2.2.3",
+    "numpy>=1.26.4,<2.0",
     "SQLAlchemy==2.0.38",
     "requests==2.32.3",
     "langchain==0.3.19",
@@ -33,4 +32,3 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 package-mode = false
-
